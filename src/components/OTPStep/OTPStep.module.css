@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xxl);
+}
+
+.otpInputs {
+  display: flex;
+  gap: 14px;
+  margin-bottom: var(--spacing-xl);
+}
+
+.otpInput {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-background-card);
+  border: 1px solid var(--color-primary-light);
+  border-radius: var(--border-radius-md);
+  transition: border-color 0.2s ease;
+}
+
+.otpInput:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.otpInput::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.error {
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+  margin-bottom: var(--spacing-xl);
+}
+
+.resendContainer {
+  margin-top: var(--spacing-xl);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.resendButton {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  background: none;
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: opacity 0.2s ease;
+  margin-left: var(--spacing-xs);
+}
+
+.resendButton:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  margin-top: auto;
+  padding-top: var(--spacing-massive);
+  flex-shrink: 0;
+}
+
+.button {
+  flex: 1;
+  height: 49px;
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border: none;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.buttonBack {
+  background-color: var(--color-background-card);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text-primary);
+  flex: 1;
+  height: 49px;
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.buttonBack:hover {
+  border-color: var(--color-primary-light);
+}
+
+.buttonPrimary {
+  background-color: var(--color-primary);
+  color: var(--color-background-card);
+  flex: 1;
+  height: 49px;
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border: none;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.buttonPrimary:hover {
+  opacity: 0.9;
+}
+
+.spacer {
+  flex: 1;
+}
